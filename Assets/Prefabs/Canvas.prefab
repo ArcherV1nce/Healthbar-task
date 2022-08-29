@@ -780,6 +780,10 @@ PrefabInstance:
       propertyPath: _character
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9196334789675787628, guid: 055eba0708752904ea7187b8d684c8a4, type: 3}
+      propertyPath: _animationDuration
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 055eba0708752904ea7187b8d684c8a4, type: 3}
 --- !u!224 &880719803971026884 stripped
