@@ -30,9 +30,27 @@ public class HealthBar : MonoBehaviour
         ValidateAnimation();
     }
 
-    private void Update()
+    public void ShowCurrentHealth()
     {
-        ShowCurrentHealth();
+        float healthToSliderValue = _character.Health / _character.HealthFull;
+
+        if (CheckHealthChanges(healthToSliderValue))
+        {
+            if (_healthbarUpdate != null)
+            {
+                StopCoroutine(_healthbarUpdate);
+            }
+
+            if (_useDoTween)
+            {
+                _slider.DOValue(healthToSliderValue, _animationDuration);
+            }
+
+            else
+            {
+                _healthbarUpdate = StartCoroutine(AnimateHealthChange(_animationDuration));
+            }
+        }
     }
 
     private bool CheckHealthChanges(float healthToSliderValue)
@@ -59,29 +77,6 @@ public class HealthBar : MonoBehaviour
                 _lastSliderValue, stepDistance);
             yield return waitForNextStep;
         }
-    }
-
-    private void ShowCurrentHealth ()
-    {
-        float healthToSliderValue = _character.Health / _character.HealthFull;
-
-        if (CheckHealthChanges(healthToSliderValue))
-        {
-            if (_healthbarUpdate != null)
-            {
-                StopCoroutine(_healthbarUpdate);
-            }
-
-            if (_useDoTween)
-            {
-                _slider.DOValue(healthToSliderValue, _animationDuration);
-            }
-
-            else
-            {
-                _healthbarUpdate = StartCoroutine(AnimateHealthChange(_animationDuration));    
-            }
-        }   
     }
 
     private void SetUp ()

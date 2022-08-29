@@ -403,6 +403,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20cef23c69fde7443b76acf39b620d74, type: 3}
+--- !u!114 &880719802658100627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 880719803971026890, guid: 20cef23c69fde7443b76acf39b620d74, type: 3}
+  m_PrefabInstance: {fileID: 880719802658100626}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439c6f121b005db4f82296eb8663d6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3489684482567229477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -457,6 +468,34 @@ PrefabInstance:
     - target: {fileID: 3489684483236767924, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489684483236767925, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
+      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489684483236767925, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
+      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489684483236767925, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
+      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 880719802658100627}
+    - target: {fileID: 3489684483236767925, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
+      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489684483236767925, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
+      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowCurrentHealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489684483236767925, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
+      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HealthBar, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3489684483236767925, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
+      propertyPath: OnHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f59ec36ef45197343aff0e4f097782e3, type: 3}
